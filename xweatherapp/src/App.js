@@ -34,19 +34,19 @@ function App() {
       </form>
       {display.data && (
         <div className="data">
-          <div className="weather-card">
+          <div className="weather-cards">
             <div className="heading">Temperature</div>
             <div className="inner-data">{city.current.temp_c}°C</div>
           </div>
-          <div className="weather-card">
+          <div className="weather-cards">
             <div className="heading">Humidity</div>
             <div className="inner-data">{city.current.humidity}%</div>
           </div>
-          <div className="weather-card">
+          <div className="weather-cards">
             <div className="heading">Condition</div>
             <div className="inner-data">{city.current.condition.text}</div>
           </div>
-          <div className="weather-card">
+          <div className="weather-cards">
             <div className="heading">Wind Speed</div>
             <div className="inner-data">{city.current.wind_kph}kph</div>
           </div>
