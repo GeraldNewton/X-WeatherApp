@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import axios from "axios";
 
 function App() {
@@ -17,13 +17,8 @@ function App() {
           q: `${text.value}`,
         },
       });
-      // if (res.data.error) {
-      //   setDisplay({ data: false, load: false });
-      //   alert(res.data.error);
-      // } else {
       setCity(res.data);
       setDisplay({ data: true, load: false });
-      // }
     } catch (e) {
       setDisplay({ data: false, load: false });
       alert("Failed to fetch weather data");
