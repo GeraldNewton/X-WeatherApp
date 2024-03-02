@@ -33,7 +33,7 @@ function App() {
         </button>
       </form>
       {display.data && (
-        <div className="data">
+        <div className="weather-card">
           <div className="weather-cards">
             <div className="heading">Temperature</div>
             <div className="inner-data">{city.current.temp_c}°C</div>
