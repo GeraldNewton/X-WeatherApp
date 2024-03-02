@@ -2,13 +2,6 @@
   display: flex;
   justify-content: space-around;
 }
-/* .weather-card {
-  border: 2px solid black;
-  max-width: 200px;
-  max-height: 200px;
-  text-align: center;
-  box-shadow: 0 6px 4px -4px black;
-} */
 * {
   background-color: rgb(125, 249, 255);
 }
@@ -19,7 +12,6 @@
 }
 .data {
   flex-wrap: wrap;
-  /* overflow-wrap: break-word; */
 }
 .heading,
 .inner-data {
