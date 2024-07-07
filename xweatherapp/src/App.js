@@ -20,33 +20,33 @@ function App() {
       setCity(res.data);
       setDisplay({ data: true, load: false });
     } catch (e) {
-      setDisplay({ data: false, load: false });
+      setDisplay({ data: false, load: true });
       alert("Failed to fetch weather data");
     }
   };
   return (
     <>
       <form onSubmit={search} className="form">
-        <input type="text" name="text" className="input" />
+        <input type="text" name="text" className="input" placeholder="Enter city name"/>
         <button type="submit" className="btn">
           Search
         </button>
       </form>
       {display.data && (
-        <div className="weather-card">
-          <div className="weather-cards">
+        <div className="weather-cards">
+          <div className="weather-card">
             <div className="heading">Temperature</div>
             <div className="inner-data">{city.current.temp_c}°C</div>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <div className="heading">Humidity</div>
             <div className="inner-data">{city.current.humidity}%</div>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <div className="heading">Condition</div>
             <div className="inner-data">{city.current.condition.text}</div>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <div className="heading">Wind Speed</div>
             <div className="inner-data">{city.current.wind_kph}kph</div>
           </div>

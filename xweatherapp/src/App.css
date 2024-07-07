@@ -1,4 +1,4 @@
-.weather-card {
+.weather-cards {
   display: flex;
   justify-content: space-around;
 }
@@ -17,7 +17,7 @@
 .inner-data {
   background-color: inherit;
 }
-.weather-cards {
+.weather-card {
   background-color: white;
   border-radius: 1rem;
   width: 200px;
